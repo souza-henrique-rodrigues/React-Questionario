@@ -1,14 +1,16 @@
 import Questao from "./Questao";
 
-export default function Questionario({ perguntas }) {
+export default function Questionario({ listaPerguntas }) {
   return (
     <div>
       <div className="mainWrapper">
-        {perguntas.map((objetoPergunta) => {
+        {listaPerguntas.map((objetoPergunta) => {
           return (
             <Questao
+              id={objetoPergunta.id}
               pergunta={objetoPergunta.pergunta}
-              onResposta={(valor) => (valor, objetoPergunta.id)}
+              resposta={objetoPergunta.resposta}
+              handleResposta
             />
           );
         })}
