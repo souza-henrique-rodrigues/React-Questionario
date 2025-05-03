@@ -1,0 +1,22 @@
+.mainWrapper {
+  border: 3px solid rgb(100, 100, 100);
+  border-radius: 10px;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.questao {
+  border: 3px solid rgb(129, 129, 129);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.yesButton,
+.noButton {
+  border-radius: 5px;
+  background-color: rgba(185, 185, 185, 0.418);
+  margin: 5px;
+  width: 80px;
+  height: 30px;
+}
