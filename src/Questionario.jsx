@@ -11,6 +11,7 @@ export default function Questionario({ listaPerguntas }) {
 
   return (
     <div>
+      <h1>Componente pai da questao</h1>
       <div className="mainWrapper">
         {listaPerguntas.map((objetoPergunta) => {
           return <Questao id={objetoPergunta.id} pergunta={objetoPergunta.pergunta} handleResposta={handleResposta} />;
