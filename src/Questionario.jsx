@@ -2,19 +2,13 @@ import Questao from "./Questao";
 
 export default function Questionario({ listaPerguntas }) {
   function handleResposta(respostaUsuario, idQuestao) {
-    for (let i = 0; i <= listaPerguntas.length; i++) {
-      if (listaPerguntas[i].id == idQuestao && respostaUsuario == listaPerguntas[i].resposta) {
+    listaPerguntas.forEach((objetoPergunta) => {
+      if (objetoPergunta.id == idQuestao && respostaUsuario == objetoPergunta.resposta) {
         console.log("Acertou questao");
-      } else if (listaPerguntas[i].id == idQuestao && respostaUsuario != listaPerguntas[i].resposta) {
+      } else {
         console.log("Errou questao");
       }
-    }
-
-    if (respostaUsuario == true) {
-      console.log(`Marcou ${respostaUsuario} na questao de ID : ${idQuestao}`);
-    } else {
-      console.log(`Marcou ${respostaUsuario} na questao de ID : ${idQuestao}`);
-    }
+    });
   }
 
   return (
