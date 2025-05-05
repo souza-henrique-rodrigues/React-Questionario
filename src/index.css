@@ -20,3 +20,19 @@
   width: 80px;
   height: 30px;
 }
+
+.chosenAnswerButton {
+  width: 130px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #b9b9b96b;
+  margin: 5px;
+}
+
+.yesButton:hover,
+.noButton:hover,
+.chosenAnswerButton:hover {
+  background-color: rgba(0, 0, 0, 0.753);
+  color: #ffffff;
+  font-weight: 600;
+}
